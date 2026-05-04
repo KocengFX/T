@@ -1,5 +1,5 @@
 // ===================================================
-//  PLAYWRIGHT AUTO REPLY - FULL FIX (NO FEATURE REMOVED)
+//  (NO FEATURE REMOVED)
 // ===================================================
 
 const fs = require("fs");
