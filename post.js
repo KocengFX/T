@@ -81,7 +81,7 @@ async function ensureReady(page) {
         route.continue();
     });
 
-    const cookies = JSON.parse(fs.readFileSync("tia.json", "utf8"));
+    const cookies = JSON.parse(fs.readFileSync("lis.json", "utf8"));
     await context.addCookies(cookies);
 
     const page = await context.newPage();
@@ -130,7 +130,7 @@ async function ensureReady(page) {
                 // Kirim
                 const [response] = await Promise.all([
                     page.waitForResponse(r =>
-                        r.url().includes("CreateNoteTweet") &&
+                        r.url().includes("CreateTweet") &&
                         r.request().method() === "POST" &&
                         r.status() === 200
                     ),
