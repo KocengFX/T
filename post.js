@@ -8,7 +8,7 @@ const { chromium } = require("playwright");
 
 const REPLY_DENGAN_FOTO = false;
 const FOTO_FOLDER = "photos";
-const LOOP = 300;
+const LOOP = 100;
 
 // Random Emoji
 function getEmoji() {
